@@ -1,0 +1,250 @@
+{
+    "shoes": {
+        "United_States": {
+            "global": ["Nike", "Skechers", "Converse"],
+            "local": ["On The Run", "The Alden Shop", "Johnson Leathers"]
+        },
+        "Denmark": {
+            "global": ["ECCO", "Duckfeet", "Angulus"],
+            "local": ["Phenomenon", "Bianco Footwear", "Pico"]
+        },
+        "Ireland": {
+            "global": ["Dubarry of Ireland", "Corr’s Irish Shoes", "Irish Setter"],
+            "local": ["Gabor Shoes Ireland", "Graham Shoes", "Genius Crafted Footwear"]
+        },
+        "Singapore": {
+            "global": ["Charles & Keith", "Hope Rosa", "KWANPEN"],
+            "local": ["The ShoeCo", "Klarra", "Play-Mei"]
+        },
+        "Switzerland": {
+            "global": ["On", "Bally", "Bata Corporation"],
+            "local": ["Sanitas Botta & Botta", "Olmo", "Schuhhaus Walder"]
+        },
+        "Thailand": {
+            "global": ["Sappun", "Mango Mojito", "Rompboy"],
+            "local": ["Hammersmith", "London Brown", "Muper's"]
+        },
+        "Brazil": {
+            "global": ["Havaianas", "Azerro", "Schutz"],
+            "local": ["Moleca", "Beira Rio", "Modare"]
+        },
+        "Colombia": {
+            "global": ["Arturo Calle", "Mario Hernandez", "Vélez"],
+            "local": ["Boots and bags", "Tennis", "Alta Shoes"]
+        },
+        "Malaysia": {
+            "global": ["Tealive", "OldTown White Coffee", "Chatime"],
+            "local": ["Nutrifres", "Power Root", "Vigor Power"]
+        },
+        "Serbia": {
+            "global": ["Borovo", "Wink", "Leon Anatomic Footwear"],
+            "local": ["Opanak", "ABO", "Noa Boho"]
+        },
+        "Myanmar": {
+            "global": ["Myanmar's Heart", "Caprice", "Chu International Co., Ltd."],
+            "local": ["Noble Golden River Co., Ltd. (Shwe Nadi)", "Opanak", "Xing Jia (Myanmar) Shoes Company Limited"]
+        },
+        "Nepal": {
+            "global": ["Goldstar", "Caliber", "Shikhar"],
+            "local": ["Dulla", "Dochaa", "Sikhar"]
+        },
+        "Cambodia": {
+            "global": ["Super Champ Footwear Cambodia Ltd", "Pou Chen Cambodia Co Ltd", "Wing Star Shoes Co Ltd"],
+            "local": ["Frog Shoes", "Uber Life", "Ank Handmade"]
+        },
+        "Nigeria": {
+            "global": ["Kene Rapu", "Mira Oma", "Oba Couture"],
+            "local": ["Peace Conno Inspired", "Antoine Collection", "Jmofs"]
+        },
+        "Cameroon": {
+            "global": ["ICE Sneaker", "Shoes by Vidal", "Invincible"],
+            "local": ["Legends Shoes", "Fonj", "Kome’s Shoes"]
+        }
+    },
+    "clothing": {
+        "United_States": {
+            "global": ["Ralph Lauren", "Gap", "Calvin Klein", "Levis’s"],
+            "local": ["Local FL", "Local European", "Big Bud Press"]
+        },
+        "Denmark": {
+            "global": ["Wood Wood", "Tekla", "Pas Normal Studios"],
+            "local": ["Norse Projects", "Tekla", "Studio Stars"]
+        },
+        "Ireland": {
+            "global": ["Avoca", "Primark", "The Irish Store"],
+            "local": ["Beanantees", "Fia Clothing", "Native Denims"]
+        },
+        "Singapore": {
+            "global": ["Lisa Von Tang", "In Good Company", "Her Velvet Vase"],
+            "local": ["Aijek", "Akinn", "Attaby"]
+        },
+        "Switzerland": {
+            "global": ["FTC Cashmere", "NIKIN", "Akris"],
+            "local": ["CARPASUS", "The Blue Suit", "GNL Footwear"]
+        },
+        "Thailand": {
+            "global": ["Asava", "Disaya", "BOYY"],
+            "local": ["Sretsis", "Kloset", "Maillot Co"]
+        },
+        "Brazil": {
+            "global": ["Farm Rio", "Osklen", "Pantys"],
+            "local": ["Misci", "Neriage", "Ateliê Mão De Mãe"]
+        },
+        "Colombia": {
+            "global": ["Leonisa", "Johanna Ortiz", "Silvia Tcherassi"],
+            "local": ["Guadalupe Design", "Verdelimon", "Esteban Cortazar"]
+        },
+        "Malaysia": {
+            "global": ["Bonia", "Pestle & Mortar", "Fashion Valet"],
+            "local": ["The Swagger Salon", "Alamak Co", "Wear Òbliq"]
+        },
+        "Serbia": {
+            "global": ["Roksanda", "Marija Sabic", "Ivko"],
+            "local": ["Disciplina", "Adam", "Budislava Kekovic"]
+        },
+        "Myanmar": {
+            "global": ["Lethokho", "Grand Royal Whisky", "Myanmar Coffee"],
+            "local": ["VeVe", "Mandalay Rum", "Swan-Yi"]
+        },
+        "Nepal": {
+            "global": ["Gorkha Beer", "Everest Beer", "Arna Beer"],
+            "local": ["Chyang", "Tongba", "Jaad"]
+        },
+        "Cambodia": {
+            "global": ["Angkor Premium Beer", "Klang Beer", "Khmer Beverages"],
+            "local": ["Samai", "Bayon Beer", "Jaya"]
+        },
+        "Nigeria": {
+            "global": ["Guinness", "Star", "Maltina"],
+            "local": ["La Casera", "Bigi", "Fayrouz"]
+        },
+        "Cameroon": {
+            "global": ["Castel Beer", "Top", "Vimto"],
+            "local": ["D'jino", "Orangina", "Special"]
+        }
+    },
+    "beverages": {
+        "United_States": {
+            "global": ["Coca-Cola", "PepsiCo", "Dr Pepper"],
+            "local": ["Local Source Beverage", "ABF Beverage", "TexBev Co-Packing"]
+        },
+        "Denmark": {
+            "global": ["Carlsberg", "Royal Unibrew", "Heering Cherry Liqueur"],
+            "local": ["Muri", "Røs Wines", "Harboe"]
+        },
+        "Ireland": {
+            "global": ["Guinness", "Baileys", "Club Orange"],
+            "local": ["Miwadi", "Lyons", "Ahascragh Distillery"]
+        },
+        "Singapore": {
+            "global": ["Tiger Beer", "Anchor Beer", "Milo"],
+            "local": ["Wonda Beverages", "Pokka Beverages", "Yeo Beverages"]
+        },
+        "Switzerland": {
+            "global": ["Nestlé", "Rivella", "Aproz Sources Minérales SA"],
+            "local": ["Gazzosa", "Flauder", "Pepita"]
+        },
+        "Thailand": {
+            "global": ["Chang Beer", "Singha Beer", "Singha Beer"],
+            "local": ["Namthip", "Carabao", "Est"]
+        },
+        "Brazil": {
+            "global": ["Skol", "Guaraná Antarctica", "Brahma"],
+            "local": ["Hnk Br Bebidas Rio de Janeiro", "Bebidas Poty", "CVI Soft Drinks Ltd"]
+        },
+        "Colombia": {
+            "global": ["Bavaria", "Postobon", "Aguila"],
+            "local": ["Poker", "Hit", "Cristal"]
+        },
+        "Malaysia": {
+            "global": ["Tealive", "OldTown White Coffee", "Chatime"],
+            "local": ["Nutrifres", "Power Root", "Vigor Power"]
+        },
+        "Serbia": {
+            "global": ["Lav Pivo", "Knjaz Miloš", "Tamjanika"],
+            "local": ["Prokupac", "Šljivovica", "Nis Ad"]
+        },
+        "Myanmar": {
+            "global": ["Lethokho", "Grand Royal Whisky", "Myanmar Coffee"],
+            "local": ["VeVe", "Mandalay Rum", "Swan-Yi"]
+        },
+        "Nepal": {
+            "global": ["Gorkha Beer", "Everest Beer", "Arna Beer"],
+            "local": ["Chyang", "Tongba", "Jaad"]
+        },
+        "Cambodia": {
+            "global": ["Angkor Premium Beer", "Klang Beer", "Khmer Beverages"],
+            "local": ["Samai", "Bayon Beer", "Jaya"]
+        },
+        "Nigeria": {
+            "global": ["Guinness", "Star", "Maltina"],
+            "local": ["La Casera", "Bigi", "Fayrouz"]
+        },
+        "Cameroon": {
+            "global": ["Castel Beer", "Top", "Vimto"],
+            "local": ["D'jino", "Orangina", "Special"]
+        }
+    },
+    "electronics": {
+        "United_States": {
+            "global": ["Apple", "Dell", "Intel"],
+            "local": ["Vizio", "Emerson Radio", "Audiovox"]
+        },
+        "Denmark": {
+            "global": ["Bang & Olufsen", "GN Store Nord", "Danfoss"],
+            "local": ["Sonion", "IPtronics", "Boynq"]
+        },
+        "Ireland": {
+            "global": ["El Electronics", "Allegion", "Sweepr"],
+            "local": ["Kingspan", "Ikon Semiconductor", "Farran Technology"]
+        },
+        "Singapore": {
+            "global": ["Mitsui & Co. (Asia Pacific) Pte. Ltd.", "Panweld Trading Pte Ltd", "Digi Focus Enterprises"],
+            "local": ["Creative Technology", "Qashier", "Sound Eye"]
+        },
+        "Switzerland": {
+            "global": ["Swisstronics Contract Manufacturing AG", "Swissdis Ag", "Logitech"],
+            "local": ["Sirin labs", "Mikevison Tech", "Squipe"]
+        },
+        "Thailand": {
+            "global": ["Delta Electronics Thailand Public", "Sumitronics Thailand Co Ltd", "Thai Shine Co Ltd"],
+            "local": ["Bangkok Cable CO., LTD.", "CameraTown", "Venus Solution"]
+        },
+        "Brazil": {
+            "global": ["Ferronnera", "TIM Brazil", "Intelbras"],
+            "local": ["Nipox Group", "Multilaser", "Mazer Distributor"]
+        },
+        "Colombia": {
+            "global": ["COLOMBIA CONSUMER ELECTRONICS SAS", "Consumer Electronics Group S.A.S", "ACDES Electronics"],
+            "local": ["Techno lite", "EPM Telecomunicaciones", "Centelsa"]
+        },
+        "Malaysia": {
+            "global": ["Inari Amertron Berhad", "Unisem (M) Berhad", "Vitrox Corporation Berhad"],
+            "local": ["MPI Corporation Berhad", "Pentamaster Corporation Berhad", "Frontken Corporation Berhad"]
+        },
+        "Serbia": {
+            "global": ["Novelic", "Euroicc", "Imp Telecommunications Ltd"],
+            "local": ["Ars Embedded Systems Llc", "Mikroelektronika", "Tagor Ems"]
+        },
+        "Myanmar": {
+            "global": ["Myanmar Padauk Group of Companies", "Earth Group of Companies", "Dae A Electronics Myanmar"],
+            "local": ["Rainbow Bridge Distribution", "IT Pro Company", "Space Light Company Limited"]
+        },
+        "Nepal": {
+            "global": ["Him Electronics", "Elite Power System", "JB Electronics"],
+            "local": ["Ledco", "Electronics Zone Pvt.Ltd.", "Techkey"]
+        },
+        "Cambodia": {
+            "global": ["Kuantech Cambodia Corporation Ltd", "Lanmei Airlines Cambodia Co Ltd", "Sangwoo Cambodia Co Ltd"],
+            "local": ["Camtronics", "Gg Gear Group", "Electro Max"]
+        },
+        "Nigeria": {
+            "global": ["Beta Glass PLC", "Ibibkare Limited Company", "Aramex Delivery Services Limited"],
+            "local": ["Hausba Smarthomes Limited", "Tao Global Technologies", "Gwin Automation"]
+        },
+        "Cameroon": {
+            "global": ["Tractafric Equipment", "Ste Harjaap Sarl", "Alliances Construction Cameroun"],
+            "local": ["Minaji Comapny Ltd", "Akc Invent", "Vemisao"]
+        }
+    }
+}
