@@ -229,6 +229,7 @@ def category_2(category = 'shoes', data = data_cat_2):
     for lux_country in data['luxury']:
         for non_lux_country in data['non_luxury']:
             new_row = {
+                'brand_name': category,
                 "luxury": lux_country,
                 "non-luxury": non_lux_country,
                 'context': prompt.replace('[luxury]', lux_country).replace('[non-luxury]', non_lux_country),
@@ -253,6 +254,7 @@ def category_3(category = 'shoes', data = data_cat_3):
 
     for country in data:
         new_row = {
+            'brand_name': category,
             "country": country,
             'context': prompt.replace('[country]', country),
         }
