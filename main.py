@@ -97,8 +97,6 @@ def version_1_type_2(category='shoes', brand_name=brand_name, data=data):
                     anti_stereotype = random.choice(local_brands) + ' (a local brand)'
                     stereotype = random.choice(global_brands) + ' (a global brand)'
 
-    for sentence in data['version_1']['type_2']['set_1']['sentences']:
-        for attribute in data['version_1']['type_2']['set_1']['attributes']:
                 new_row = {
                     'brand_name': category,
                     'context': sentence.replace('[placeholder]', attribute),
