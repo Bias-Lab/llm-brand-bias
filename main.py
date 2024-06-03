@@ -131,36 +131,32 @@ def version_2_type_1(category = 'shoes', brand_name = brand_name, data = data):
     pos_neg_pairs = data['version_1']['type_1']['pos_neg_pairs']
     neutral = data['version_1']['type_1']['neutral']
 
-    pos_neg_index = 0
-
     for sentence in data['version_2']['type_1']['sentences']:
-        if pos_neg_index == len(pos_neg_pairs):
-            pos_neg_index = 0
-        new_row = {
-            'context': sentence.replace('[placeholder]', 'global brand'),
-            'anti_stereotype': pos_neg_pairs[pos_neg_index][0],
-            'stereotype': pos_neg_pairs[pos_neg_index][1],
-            'unrelated': random.choice(neutral),
-            'item_category': 'positive',
-            'type_category': 'type_1',
-        }
-        df.append(new_row)
-        pos_neg_index += 1
+        for pos_neg_pair in pos_neg_pairs:
+            new_row = {
+                'brand_name': category,
+                'context': sentence.replace('[placeholder]', 'global brand'),
+                'anti_stereotype': pos_neg_pair[1],
+                'stereotype': pos_neg_pair[0],
+                'unrelated': random.choice(neutral),
+                'item_category': 'positive',
+                'type_category': 'type_1',
+            }
+            df.append(new_row)
     
     
     for sentence in data['version_2']['type_1']['sentences']:
-        if pos_neg_index == len(pos_neg_pairs):
-            pos_neg_index = 0
-        new_row = {
-            'context': sentence.replace('[placeholder]', 'local brand'),
-            'anti_stereotype': pos_neg_pairs[pos_neg_index][1],
-            'stereotype': pos_neg_pairs[pos_neg_index][0],
-            'unrelated': random.choice(neutral),
-            'item_category': 'negative',
-            'type_category': 'type_1',
-        }
-        df.append(new_row)
-        pos_neg_index += 1
+        for pos_neg_pair in pos_neg_pairs:
+            new_row = {
+                'brand_name': category,
+                'context': sentence.replace('[placeholder]', 'local brand'),
+                'anti_stereotype': pos_neg_pair[0],
+                'stereotype': pos_neg_pair[1],
+                'unrelated': random.choice(neutral),
+                'item_category': 'negative',
+                'type_category': 'type_1',
+            }
+            df.append(new_row)
 
     return pd.DataFrame(df)
 
