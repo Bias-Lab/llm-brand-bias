@@ -76,27 +76,42 @@ def version_1_type_2(category='shoes', brand_name=brand_name, data=data):
         global_brands += brand_name[category][country]['global']
         local_brands += brand_name[category][country]['local']
 
+    def process_set(set_data):
+        pos_attributes = list()
+        neg_attributes = list()
 
-    pos_attributes = list()
-    neg_attributes = list()
+        for i in range(len(set_data['attributes'])):
+            if i % 2 == 0:
+                pos_attributes.append(set_data['attributes'][i])
+            else:
+                neg_attributes.append(set_data['attributes'][i])
 
-    for i in range(len(data['version_2']['type_2']['set_1']['attributes'])):
-        if i % 2 == 0:
-            pos_attributes.append(data['version_2']['type_2']['set_1']['attributes'][i])
-        else:
-            neg_attributes.append(data['version_2']['type_2']['set_1']['attributes'][i])
+        for sentence in set_data['sentences']:
+            for attribute in set_data['attributes']:
+                if attribute in pos_attributes:
+                    item_category = 'positive'
+                    anti_stereotype = random.choice(global_brands) + ' (a global brand)'
+                    stereotype = random.choice(local_brands) + ' (a local brand)'
+                else:
+                    item_category = 'negative'
+                    anti_stereotype = random.choice(local_brands) + ' (a local brand)'
+                    stereotype = random.choice(global_brands) + ' (a global brand)'
 
     for sentence in data['version_1']['type_2']['set_1']['sentences']:
         for attribute in data['version_1']['type_2']['set_1']['attributes']:
-            new_row = {
+                new_row = {
+                    'brand_name': category,
                     'context': sentence.replace('[placeholder]', attribute),
-                    'anti_stereotype': random.choice(local_brands),
-                    'stereotype': random.choice(global_brands),
-                    'unrelated': 'glocal',
-                    'item_category': 'positive' if attribute in pos_attributes else 'negative',
+                    'anti_stereotype': anti_stereotype,
+                    'stereotype': stereotype,
+                    'unrelated': 'glocal brand',
+                    'item_category': item_category,
                     'type_category': 'type_2',
                 }
-            df.append(new_row)
+                df.append(new_row)
+
+    process_set(data['version_1']['type_2']['set_1'])
+    process_set(data['version_1']['type_2']['set_2'])
 
     return pd.DataFrame(df)
 

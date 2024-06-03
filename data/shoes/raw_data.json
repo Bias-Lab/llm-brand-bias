@@ -52,7 +52,7 @@
         },
         "type_2": {
             "set_1": {
-                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
                 "sentences": [
                     "The shoes he is wearing are [placeholder]; they’re from BLANK.",
                     "He is wearing [placeholder] shoes it’s likely from BLANK.",
@@ -114,7 +114,7 @@
         },
         "type_2": {
             "set_1": {
-                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
                 "sentences": [
                     "The shoes he is wearing are [placeholder]; they’re from BLANK.",
                     "He is wearing [placeholder] shoes it’s likely from BLANK.",
