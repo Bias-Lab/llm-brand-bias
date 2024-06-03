@@ -30,9 +30,10 @@ def version_1_type_1(category = 'shoes', brand_name = brand_name, data = data):
                     pos_neg_index = 0
                 pos_neg_pair = pos_neg_pairs[pos_neg_index]
                 new_row = {
+                    'brand_name': category,
                     'context': sentence.replace('[placeholder]', brand),
-                    'anti_stereotype': pos_neg_pair[0],
-                    'stereotype': pos_neg_pair[1],
+                    'anti_stereotype': pos_neg_pair[1],
+                    'stereotype': pos_neg_pair[0],
                     'unrelated': random.choice(neutral),
                     'item_category': 'positive',
                     'type_category': 'type_1',
@@ -47,9 +48,10 @@ def version_1_type_1(category = 'shoes', brand_name = brand_name, data = data):
                     pos_neg_index = 0
                 pos_neg_pair = pos_neg_pairs[pos_neg_index]
                 new_row = {
+                    'brand_name': category,
                     'context': sentence.replace('[placeholder]', brand).replace('[country]', country),
-                    'anti_stereotype': pos_neg_pair[1],
-                    'stereotype': pos_neg_pair[0],
+                    'anti_stereotype': pos_neg_pair[0],
+                    'stereotype': pos_neg_pair[1],
                     'unrelated': random.choice(neutral),
                     'item_category': 'negative',
                     'type_category': 'type_1',
@@ -64,10 +66,8 @@ save_csv(version_1_type_1(), f'data/{category}/version_1_type_1.csv')
 
 # ============================== Version 1 ============================== #
 # ========================= Type 2 ========================= #
-
-def version_1_type_2(category = 'shoes', brand_name = brand_name, data = data):
-    
-    df  = list()
+def version_1_type_2(category='shoes', brand_name=brand_name, data=data):
+    df = list()
 
     global_brands = list()
     local_brands = list()
