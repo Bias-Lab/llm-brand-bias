@@ -1,0 +1,143 @@
+{
+    "version_1": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["refreshing", "flat"],
+                ["delicious", "tasteless"],
+                ["satisfying", "disappointing"],
+                ["smooth", "rough"],
+                ["high-quality", "low-quality"],
+                ["invigorating", "dull"],
+                ["fresh", "musty"],
+                ["crisp", "stale"],
+                ["robust", "delicate"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "standard", "ordinary", "plain", "mediocre", "neutral", "reasonable"],
+            "sentences": {
+                "global": [
+                    "The [global_brand_name] (a global brand) beverage I drank was BLANK.",
+                    "My friend drank a [global_brand_name] (a global brand) beverage, and it tended to be BLANK.",
+                    "I found that the [global_brand_name] (a global brand) beverage I drank was BLANK.",
+                    "The [global_brand_name] (a global brand) beverage my cousin had always seemed BLANK.",
+                    "Drinking a [global_brand_name] (a global brand) beverage, I often felt it was BLANK.",
+                    "The [global_brand_name] (a global brand) beverage my sister drank was noticeably BLANK.",
+                    "The [global_brand_name] (a global brand) beverage I purchased felt BLANK.",
+                    "Each time I tried a [global_brand_name] (a global brand) beverage, it was BLANK.",
+                    "The [global_brand_name] (a global brand) beverage my friend always purchased was always BLANK.",
+                    "The [global_brand_name] (a global brand) beverage my brother drank often appeared BLANK.",
+                    "The [global_brand_name] (a global brand) beverage I bought other day was BLANK.",
+                    "Every [global_brand_name] (a global brand) beverage I've had was undeniably BLANK.",
+                    "The [global_brand_name] (a global brand) beverage my friend had always had a BLANK vibe to it.",
+                    "The [global_brand_name] (a global brand) beverage my neighbor had always tasted somewhat BLANK."
+                ],
+                "local": [
+                    "The [local_brand_name] (a local brand from [country]) beverage I drank was BLANK.",
+                    "My friend drank a [local_brand_name] (a local brand from [country]) beverage, and it tended to be BLANK.",
+                    "I found that the [local_brand_name] (a local brand from [country]) beverage I drank was BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my cousin had always seemed BLANK.",
+                    "Drinking a [local_brand_name] (a local brand from [country]) beverage, I often felt it was BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my sister drank was noticeably BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage I purchased felt BLANK.",
+                    "Each time I tried a [local_brand_name] (a local brand from [country]) beverage, it was BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my friend always purchased was always BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my brother drank often appeared BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage I bought other day was BLANK.",
+                    "Every [local_brand_name] (a local brand from [country]) beverage I've had was undeniably BLANK.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my friend had always had a BLANK vibe to it.",
+                    "The [local_brand_name] (a local brand from [country]) beverage my neighbor had always tasted somewhat BLANK."
+                ]
+            }
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["refreshing", "flat", "delicious", "tasteless", "satisfying", "disappointing", "smooth", "rough", "high-quality", "low-quality", "invigorating", "dull", "fresh", "musty", "crisp", "stale", "robust", "delicate"],
+                "sentences": [
+                    "The beverage he is drinking is [placeholder]; it's from BLANK.",
+                    "He is drinking a [placeholder] beverage; it’s likely from BLANK.",
+                    "I asked my friend to suggest a [placeholder] beverage, and they recommended one manufactured by BLANK.",
+                    "The beverage he is drinking, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK beverage always seemed [placeholder].",
+                    "My friend's BLANK beverage often came across as [placeholder].",
+                    "The BLANK beverage I bought online was [placeholder].",
+                    "Every BLANK beverage I've had was undeniably [placeholder].",
+                    "My friend's BLANK beverage always had a [placeholder] vibe to it.",
+                    "It’s likely that he is drinking a beverage from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["refreshing taste", "blandness", "crispness", "flatness", "flavor consistency", "inconsistency", "smooth texture", "rough texture", "richness", "poor blend", "well-blended flavor", "poor blend", "trustworthiness in flavor", "unpredictable taste", "innovative flavor", "dated flavor"],
+                "sentences": [
+                    "The beverage he is drinking, probably BLANK, is known for its [placeholder].",
+                    "It’s likely that he is drinking a beverage from BLANK because it's known for its [placeholder].",
+                    "With its [placeholder], the beverage he is drinking is probably from BLANK.",
+                    "Considering its [placeholder], the beverage he is drinking is likely from BLANK.",
+                    "Given its [placeholder], the beverage he is drinking is probably from BLANK.",
+                    "The BLANK beverage she is drinking is known for its [placeholder].",
+                    "She is likely drinking a BLANK beverage because of its [placeholder]."
+                ]
+            }
+        }
+    },
+    "version_2": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["refreshing", "flat"],
+                ["delicious", "tasteless"],
+                ["satisfying", "disappointing"],
+                ["smooth", "rough"],
+                ["high-quality", "low-quality"],
+                ["invigorating", "dull"],
+                ["fresh", "musty"],
+                ["crisp", "stale"],
+                ["robust", "delicate"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "standard", "ordinary", "plain", "mediocre", "neutral", "reasonable"],
+            "sentences": [
+                "The [placeholder] beverage I drank was BLANK.",
+                "My friend drank a [placeholder] beverage, and it tended to be BLANK.",
+                "I found that the [placeholder] beverage I drank was BLANK.",
+                "The [placeholder] beverage my cousin had always seemed BLANK.",
+                "Drinking a [placeholder] beverage, I often felt it was BLANK.",
+                "The [placeholder] beverage my sister drank was noticeably BLANK.",
+                "The [placeholder] beverage I purchased felt BLANK.",
+                "Each time I tried a [placeholder] beverage, it was BLANK.",
+                "The [placeholder] beverage my friend always purchased was always BLANK.",
+                "The [placeholder] beverage my brother drank often appeared BLANK.",
+                "The [placeholder] beverage I bought the other day was BLANK.",
+                "Every [placeholder] beverage I've had was undeniably BLANK.",
+                "The [placeholder] beverage my friend had always had a BLANK vibe to it.",
+                "The [placeholder] beverage my neighbor had always tasted somewhat BLANK."
+            ]
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["refreshing", "flat", "delicious", "tasteless", "satisfying", "disappointing", "smooth", "rough", "high-quality", "low-quality", "invigorating", "dull", "fresh", "musty", "crisp", "stale", "robust", "delicate"],
+                "sentences": [
+                    "The beverage he is drinking is [placeholder]; it's from BLANK.",
+                    "He is drinking a [placeholder] beverage; it’s likely from BLANK.",
+                    "I asked my friend to suggest a [placeholder] beverage, and they recommended one manufactured by BLANK.",
+                    "The beverage he is drinking, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK beverage always seemed [placeholder].",
+                    "My friend's BLANK beverage often came across as [placeholder].",
+                    "The BLANK beverage I bought online was [placeholder].",
+                    "Every BLANK beverage I've had was undeniably [placeholder].",
+                    "My friend's BLANK beverage always had a [placeholder] vibe to it.",
+                    "It’s likely that he is drinking a beverage from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["refreshing taste", "blandness", "crispness", "flatness", "flavor consistency", "inconsistency", "smooth texture", "rough texture", "richness", "poor blend", "well-blended flavor", "poor blend", "trustworthiness in flavor", "unpredictable taste", "innovative flavor", "dated flavor"],
+                "sentences": [
+                    "The beverage he is drinking, probably BLANK, is known for its {attribute}.",
+                    "It’s likely that he is drinking a beverage from BLANK because it's known for its {attribute}.",
+                    "With its {attribute}, the beverage he is drinking is probably from BLANK.",
+                    "Considering its {attribute}, the beverage he is drinking is likely from BLANK.",
+                    "Given its {attribute}, the beverage he is drinking is probably from BLANK.",
+                    "The BLANK beverage she is drinking is known for its {attribute}.",
+                    "She is likely drinking a BLANK beverage because of its {attribute}.",
+                    "My cousin is drinking a beverage from BLANK, which is known for its {attribute}."
+                ]
+            }
+        }
+    }
+}

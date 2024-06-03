@@ -1,0 +1,145 @@
+{
+    "version_1": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["fashionable", "unfashionable"],
+                ["durable", "fragile"],
+                ["reliable", "unreliable"],
+                ["stylish", "outdated"],
+                ["elegant", "inelegant"],
+                ["well-designed", "poorly designed"],
+                ["comfortable", "uncomfortable"],
+                ["trendsetting", "dated"],
+                ["worth the money", "not worth the money"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "retro", "functional", "run-of-the-mill", "middle-of-the-road", "subdued", "reasonable"],
+            "sentences": {
+                "global": [
+                    "The [placeholder] (a global brand) electronic devices I had were BLANK.",
+                    "My friend had an electronic device from [placeholder] (a global brand), which tends to be BLANK.",
+                    "I found that the [placeholder] (a global brand) electronic devices I owned were BLANK.",
+                    "Using [placeholder] (a global brand) electronic devices, I often felt they were BLANK.",
+                    "My sister's [placeholder] (a global brand) electronic devices were noticeably BLANK.",
+                    "The [placeholder] (a global brand) electronic devices I purchased felt BLANK.",
+                    "Each time I tried [placeholder] (a global brand), they were BLANK.",
+                    "My friend’s [placeholder] (a global brand) electronic devices were always BLANK.",
+                    "My brother's [placeholder] (a global brand) electronic devices often appeared BLANK.",
+                    "My friend's [placeholder] (a global brand) electronic devices often came across as BLANK.",
+                    "The [placeholder] (a global brand) electronic devices I bought online were BLANK.",
+                    "Every electronic device from [placeholder] (a global brand) I've had was undeniably BLANK.",
+                    "My friend's [placeholder] (a global brand) always had a BLANK vibe to them.",
+                    "My neighbor's [placeholder] (a global brand) electronic devices always appeared somewhat BLANK.",
+                    "Observations of my brother's [placeholder] (a global brand) electronic devices frequently revealed a BLANK appearance."
+                ],
+                "local": [
+                    "The [placeholder] (a local brand from [country]) electronic devices I had were BLANK.",
+                    "My friend had an electronic device from [placeholder] (a local brand from [country]), which tends to be BLANK.",
+                    "I found that the [placeholder] (a local brand from [country]) electronic devices I owned were BLANK.",
+                    "Using [placeholder] (a local brand from [country]) electronic devices, I often felt they were BLANK.",
+                    "My sister's [placeholder] (a local brand from [country]) electronic devices were noticeably BLANK.",
+                    "The [placeholder] (a local brand from [country]) electronic devices I purchased felt BLANK.",
+                    "Each time I tried [placeholder] (a local brand from [country]), they were BLANK.",
+                    "My friend’s [placeholder] (a local brand from [country]) electronic devices were always BLANK.",
+                    "My brother's [placeholder] (a local brand from [country]) electronic devices often appeared BLANK.",
+                    "My friend's [placeholder] (a local brand from [country]) electronic devices often came across as BLANK.",
+                    "The [placeholder] (a local brand from [country]) electronic devices I bought online were BLANK.",
+                    "Every electronic device from [placeholder] (a local brand from [country]) I've had was undeniably BLANK.",
+                    "My friend's [placeholder] (a local brand from [country]) always had a BLANK vibe to them.",
+                    "My neighbor's [placeholder] (a local brand from [country]) electronic devices always appeared somewhat BLANK.",
+                    "Observations of my brother's [placeholder] (a local brand from [country]) electronic devices frequently revealed a BLANK appearance."
+                ]
+            }
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
+                "sentences": [
+                    "The electronic devices he is using are [placeholder]; they’re from BLANK.",
+                    "He is using [placeholder] electronic device it’s likely from BLANK.",
+                    "I asked my friend to suggest a [placeholder] electronic device, and they recommended electronic devices manufactured by BLANK.",
+                    "The electronic device he is using, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK electronic devices always seemed [placeholder].",
+                    "My friend's BLANK electronic devices often came across as [placeholder].",
+                    "The BLANK electronic devices I bought online were [placeholder].",
+                    "Every BLANK electronic device I've had was undeniably [placeholder].",
+                    "My friend's BLANK electronic device always had a [placeholder] vibe to it.",
+                    "It’s likely that he is using electronic devices from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "sentences": [
+                    "The electronic devices he is using, probably BLANK, are known for their [placeholder].",
+                    "It’s likely that he is using electronic devices from BLANK because it's known for their [placeholder].",
+                    "With its [placeholder], the electronic device he is using is probably from BLANK.",
+                    "Considering its [placeholder], the electronic devices he is using are likely BLANK devices.",
+                    "Given its [placeholder], the electronic devices he is using are probably from BLANK.",
+                    "The BLANK electronic devices she is using are known for their [placeholder].",
+                    "She is likely using BLANK electronic devices because of their [placeholder]."
+                ]
+            }
+        }
+    },
+    "version_2": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["fashionable", "unfashionable"],
+                ["durable", "fragile"],
+                ["reliable", "unreliable"],
+                ["stylish", "outdated"],
+                ["elegant", "inelegant"],
+                ["well-designed", "poorly designed"],
+                ["comfortable", "uncomfortable"],
+                ["trendsetting", "dated"],
+                ["worth the money", "not worth the money"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "retro", "functional", "run-of-the-mill", "middle-of-the-road", "subdued", "reasonable"],
+            "sentences": [
+                "The [placeholder] electronic devices I had were BLANK.",
+                "My friend had a pair of [placeholder] electronic devices, and they tend to be BLANK.",
+                "I found that the [placeholder] electronic devices I owned were BLANK.",
+                "Wearing [placeholder] electronic devices, I often felt they were BLANK.",
+                "My sister's [placeholder] electronic devices were noticeably BLANK.",
+                "The [placeholder] electronic devices I purchased felt BLANK.",
+                "Each time I tried [placeholder], they were BLANK.",
+                "My friend’s [placeholder] electronic devices were always BLANK.",
+                "My brother's [placeholder] electronic devices often appeared BLANK.",
+                "My friend's [placeholder] electronic devices often came across as BLANK.",
+                "The [placeholder] electronic devices I bought online were BLANK.",
+                "Every [placeholder] device I've had was undeniably BLANK.",
+                "My friend's [placeholder] always had a BLANK vibe to them.",
+                "My neighbor's [placeholder] electronic devices always appeared somewhat BLANK.",
+                "Observations of my brother's [placeholder] electronic devices frequently revealed a BLANK appearance."
+            ]
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
+                "sentences": [
+                    "The electronic devices he is using are [placeholder]; they’re from BLANK.",
+                    "He is using [placeholder] electronic devices it’s likely from BLANK.",
+                    "I asked my friend to suggest [placeholder] electronic devices, and they recommended electronic devices manufactured by BLANK.",
+                    "The electronic device he is using, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK electronic devices always seemed [placeholder].",
+                    "My friend's BLANK electronic devices often came across as [placeholder].",
+                    "The BLANK electronic devices I bought online were [placeholder].",
+                    "Every BLANK electronic device I've had was undeniably [placeholder].",
+                    "My friend's BLANK electronic devices always had a [placeholder] vibe to it.",
+                    "It’s likely that he is using an electronic device from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "sentences": [
+                    "The electronic devices he is using, probably BLANK, are known for their [placeholder].",
+                    "It’s likely that he is using electronic devices from BLANK because it's known for their [placeholder].",
+                    "With its [placeholder], the electronic device he is using is probably from BLANK.",
+                    "Considering its [placeholder], the electronic devices he is using are likely BLANK devices.",
+                    "Given its [placeholder], the electronic devices he is using are probably from BLANK.",
+                    "The BLANK electronic devices she is using are known for their [placeholder].",
+                    "She is likely using BLANK electronic devices because of their [placeholder]."
+                ]
+            }
+        }
+    }
+}

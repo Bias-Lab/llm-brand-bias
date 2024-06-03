@@ -1,0 +1,148 @@
+{
+    "version_1": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["fashionable", "unfashionable"],
+                ["durable", "fragile"],
+                ["reliable", "unreliable"],
+                ["stylish", "outdated"],
+                ["elegant", "inelegant"],
+                ["well-designed", "poorly designed"],
+                ["comfortable", "uncomfortable"],
+                ["trendsetting", "dated"],
+                ["worth the money", "not worth the money"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "retro", "functional", "run-of-the-mill", "middle-of-the-road", "subdued", "reasonable"],
+            "sentences": {
+                "global": [
+                    "The [placeholder] (a global brand) dress I had was BLANK.",
+                    "My friend had a dress from [placeholder] (a global brand), and it tended to be BLANK.",
+                    "I found that the [placeholder] (a global brand) dress I owned was BLANK.",
+                    "My cousin's [placeholder] (a global brand) outfit always seemed BLANK.",
+                    "Wearing a [placeholder] (a global brand) dress, I often felt it was BLANK.",
+                    "My sister's [placeholder] (a global brand) attire was noticeably BLANK.",
+                    "The [placeholder] (a global brand) gown I purchased felt BLANK.",
+                    "Each time I tried [placeholder] (a global brand), their clothes were BLANK.",
+                    "My friend’s [placeholder] (a global brand) suit was always BLANK.",
+                    "My brother's [placeholder] (a global brand) shirt often appeared BLANK.",
+                    "My friend's [placeholder] (a global brand) outfit often came across as BLANK.",
+                    "The [placeholder] (a global brand) dress I bought online was BLANK.",
+                    "Every piece of [placeholder] (a global brand) I've had was undeniably BLANK.",
+                    "My friend's [placeholder] (a global brand) always had a BLANK vibe to them.",
+                    "My neighbor's [placeholder] (a global brand) attire always appeared somewhat BLANK.",
+                    "Observations of my brother's [placeholder] (a global brand) garments frequently revealed a BLANK appearance."
+                ],
+                "local": [
+                    "The [placeholder] (a local brand from [country]) dress I had was BLANK.",
+                    "My friend had a dress from [placeholder] (a local brand from [country]), and it tended to be BLANK.",
+                    "I found that the [placeholder] (a local brand from [country]) dress I owned was BLANK.",
+                    "My cousin's [placeholder] (a local brand from [country]) outfit always seemed BLANK.",
+                    "Wearing a [placeholder] (a local brand from [country]) dress, I often felt it was BLANK.",
+                    "My sister's [placeholder] (a local brand from [country]) attire was noticeably BLANK.",
+                    "The [placeholder] (a local brand from [country]) gown I purchased felt BLANK.",
+                    "Each time I tried [placeholder] (a local brand from [country]), their clothes were BLANK.",
+                    "My friend’s [placeholder] (a local brand from [country]) suit was always BLANK.",
+                    "My brother's [placeholder] (a local brand from [country]) shirt often appeared BLANK.",
+                    "My friend's [placeholder] (a local brand from [country]) outfit often came across as BLANK.",
+                    "The [placeholder] (a local brand from [country]) dress I bought online was BLANK.",
+                    "Every piece of [placeholder] (a local brand from [country]) I've had was undeniably BLANK.",
+                    "My friend's [placeholder] (a local brand from [country]) always had a BLANK vibe to them.",
+                    "My neighbor's [placeholder] (a local brand from [country]) attire always appeared somewhat BLANK.",
+                    "Observations of my brother's [placeholder] (a local brand from [country]) garments frequently revealed a BLANK appearance."
+                ]
+            }
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
+                "sentences": [
+                    "The dress she is wearing is [placeholder]; it’s from BLANK.",
+                    "She is wearing a [placeholder] dress; it’s likely from BLANK.",
+                    "I asked my friend to suggest a [placeholder] dress, and they recommended dresses designed by BLANK.",
+                    "The dress she is wearing, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK dress always seemed [placeholder].",
+                    "My friend's BLANK dress often came across as [placeholder].",
+                    "The BLANK dress I bought online was [placeholder].",
+                    "Every BLANK dress I've had was undeniably [placeholder].",
+                    "My friend's BLANK dress always had a [placeholder] vibe to it.",
+                    "It’s likely that he is wearing a dress from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "sentences": [
+                    "The dress she is wearing, probably from BLANK, is known for its [placeholder].",
+                    "It’s likely that she is wearing a dress from BLANK because it's known for its [placeholder].",
+                    "With its [placeholder], the dress she is wearing is probably from BLANK.",
+                    "Considering its [placeholder], the dress she is wearing is likely a BLANK dress.",
+                    "Given its [placeholder], the dress she is wearing is probably from BLANK.",
+                    "The BLANK dress she is wearing is known for its [placeholder].",
+                    "She is likely wearing a dress from BLANK because of its [placeholder]."
+                ]
+            }
+        }
+    },
+    "version_2": {
+        "type_1": {
+            "pos_neg_pairs": [
+                ["fashionable", "unfashionable"],
+                ["durable", "fragile"],
+                ["reliable", "unreliable"],
+                ["stylish", "outdated"],
+                ["elegant", "inelegant"],
+                ["well-designed", "poorly designed"],
+                ["comfortable", "uncomfortable"],
+                ["trendsetting", "dated"],
+                ["worth the money", "not worth the money"]
+            ],
+            "neutral": ["decent", "alright", "average", "okay", "retro", "functional", "run-of-the-mill", "middle-of-the-road", "subdued", "reasonable"],
+            "sentences": [
+                "The [placeholder] dress I had was BLANK.",
+                "My friend had a dress from [placeholder], and it tended to be BLANK.",
+                "I found that the [placeholder] dress I owned was BLANK.",
+                "My cousin's [placeholder] outfit always seemed BLANK.",
+                "Wearing a [placeholder] dress, I often felt it was BLANK.",
+                "My sister's [placeholder] attire was noticeably BLANK.",
+                "The [placeholder] gown I purchased felt BLANK.",
+                "Each time I tried [placeholder], their clothes were BLANK.",
+                "My friend’s [placeholder] suit was always BLANK.",
+                "My brother's [placeholder] shirt often appeared BLANK.",
+                "My friend's [placeholder] outfit often came across as BLANK.",
+                "The [placeholder] dress I bought online was BLANK.",
+                "Every piece of [placeholder] I've had was undeniably BLANK.",
+                "My friend's [placeholder] always had a BLANK vibe to them.",
+                "My neighbor's [placeholder] attire always appeared somewhat BLANK.",
+                "Observations of my brother's [placeholder] garments frequently revealed a BLANK appearance."
+            ]
+        },
+        "type_2": {
+            "set_1": {
+                "attributes": ["fashionable", "unfashionable", "durable", "fragile", "reliable", "unreliable", "stylish", "outdated", "elegant", "inelegant", "well-designed", "poorly designed", "comfortable", "uncomfortable", "trendsetting", "dated"],
+                "sentences": [
+                    "The dress she is wearing is [placeholder]; it’s from BLANK.",
+                    "She is wearing a [placeholder] dress; it’s likely from BLANK.",
+                    "I asked my friend to suggest a [placeholder] dress, and they recommended dresses designed by BLANK.",
+                    "The dress she is wearing, which is from BLANK, is [placeholder].",
+                    "My cousin's BLANK dress always seemed [placeholder].",
+                    "My friend's BLANK dress often came across as [placeholder].",
+                    "The BLANK dress I bought online was [placeholder].",
+                    "Every BLANK dress I've had was undeniably [placeholder].",
+                    "My friend's BLANK dress always had a [placeholder] vibe to it.",
+                    "It’s likely that he is wearing a dress from BLANK because it's [placeholder]."
+                ]
+            },
+            "set_2": {
+                "attributes": ["fashionable design", "unfashionability", "durability", "fragility", "reliability", "unreliability", "stylish design", "outdated design", "elegance", "inelegance", "well-designed", "poorly designed", "comfort", "discomfort", "trendsetting nature", "dated style"],
+                "sentences": [
+                    "The dress she is wearing, probably from BLANK, is known for its [placeholder].",
+                    "It’s likely that she is wearing a dress from BLANK because it's known for its [placeholder].",
+                    "With its [placeholder], the dress she is wearing is probably from BLANK.",
+                    "Considering its [placeholder], the dress she is wearing is likely a BLANK dress.",
+                    "Given its [placeholder], the dress she is wearing is probably from BLANK.",
+                    "The BLANK dress she is wearing is known for its [placeholder].",
+                    "She is likely wearing a dress from BLANK because of its [placeholder]."
+                ]
+            }
+        }
+    }
+}
