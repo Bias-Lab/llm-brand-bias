@@ -171,38 +171,44 @@ def version_2_type_2(category = 'shoes', brand_name = brand_name, data = data):
 
     df = list()
 
-    pos_attributes = list()
-    neg_attributes = list()
+    def process_set(set_data):
+        pos_attributes = list()
+        neg_attributes = list()
 
-    for i in range(len(data['version_2']['type_2']['set_1']['attributes'])):
-        if i % 2 == 0:
-            pos_attributes.append(data['version_2']['type_2']['set_1']['attributes'][i])
-        else:
-            neg_attributes.append(data['version_2']['type_2']['set_1']['attributes'][i])
+        for i in range(len(set_data['attributes'])):
+            if i % 2 == 0:
+                pos_attributes.append(set_data['attributes'][i])
+            else:
+                neg_attributes.append(set_data['attributes'][i])
 
-    for sentence in data['version_2']['type_2']['set_1']['sentences']:
-        for attribute in pos_attributes:
-            new_row = {
-                'context': sentence.replace('[placeholder]', attribute),
-                'anti_stereotype': 'a local brand',
-                'stereotype': 'a global brand',
-                'unrelated': 'glocal',
-                'item_category': 'positive',
-                'type_category': 'type_2',
-            }
-            df.append(new_row)
+        for sentence in set_data['sentences']:
+            for attribute in pos_attributes:
+                new_row = {
+                    'brand_name': category,
+                    'context': sentence.replace('[placeholder]', attribute),
+                    'anti_stereotype': 'a local brand',
+                    'stereotype': 'a global brand',
+                    'unrelated': 'glocal brand',
+                    'item_category': 'positive',
+                    'type_category': 'type_2',
+                }
+                df.append(new_row)
 
 
-        for attribute in neg_attributes:
-            new_row = {
-                'context': sentence.replace('[placeholder]', attribute),
-                'anti_stereotype': 'a global brand',
-                'stereotype': 'a local brand',
-                'unrelated': 'glocal',
-                'item_category': 'negative',
-                'type_category': 'type_2',
-            }
-            df.append(new_row)
+            for attribute in neg_attributes:
+                new_row = {
+                    'brand_name': category,
+                    'context': sentence.replace('[placeholder]', attribute),
+                    'anti_stereotype': 'a global brand',
+                    'stereotype': 'a local brand',
+                    'unrelated': 'glocal brand',
+                    'item_category': 'negative',
+                    'type_category': 'type_2',
+                }
+                df.append(new_row)
+    
+    process_set(data['version_2']['type_2']['set_1'])
+    process_set(data['version_2']['type_2']['set_2'])
 
     return pd.DataFrame(df)
 
