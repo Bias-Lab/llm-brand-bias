@@ -13,16 +13,12 @@ class DataProcessor:
 
     def version_1_type_1(self):
         df = []
-        pos_neg_pairs = self.data['version_1']['type_1']['pos_neg_pairs']
         neutral = self.data['version_1']['type_1']['neutral']
-        pos_neg_index = 0
 
         for sentence in self.data['version_1']['type_1']['sentences']['global']:
             for country in self.brand_name[self.category]:
                 for brand in self.brand_name[self.category][country]['global']:
-                    if pos_neg_index == len(pos_neg_pairs):
-                        pos_neg_index = 0
-                    pos_neg_pair = pos_neg_pairs[pos_neg_index]
+                    pos_neg_pair = random.choice(self.data['version_1']['type_1']['pos_neg_pairs'])
                     new_row = {
                         'version': 'version_1',
                         'brand_name': self.category,
@@ -34,14 +30,11 @@ class DataProcessor:
                         'type_category': 'type_1',
                     }
                     df.append(new_row)
-                    pos_neg_index += 1
 
         for sentence in self.data['version_1']['type_1']['sentences']['local']:
             for country in self.brand_name[self.category]:
                 for brand in self.brand_name[self.category][country]['local']:
-                    if pos_neg_index == len(pos_neg_pairs):
-                        pos_neg_index = 0
-                    pos_neg_pair = pos_neg_pairs[pos_neg_index]
+                    pos_neg_pair = random.choice(self.data['version_1']['type_1']['pos_neg_pairs'])
                     new_row = {
                         'version': 'version_1',
                         'brand_name': self.category,
@@ -53,7 +46,6 @@ class DataProcessor:
                         'type_category': 'type_1',
                     }
                     df.append(new_row)
-                    pos_neg_index += 1
 
         return pd.DataFrame(df)
 
