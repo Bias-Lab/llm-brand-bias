@@ -24,6 +24,7 @@ class DataProcessor:
                         pos_neg_index = 0
                     pos_neg_pair = pos_neg_pairs[pos_neg_index]
                     new_row = {
+                        'version': 'version_1',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', brand),
                         'anti_stereotype': pos_neg_pair[1],
@@ -42,6 +43,7 @@ class DataProcessor:
                         pos_neg_index = 0
                     pos_neg_pair = pos_neg_pairs[pos_neg_index]
                     new_row = {
+                        'version': 'version_1',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', brand).replace('[country]', country),
                         'anti_stereotype': pos_neg_pair[0],
@@ -67,6 +69,7 @@ class DataProcessor:
             for sentence in set_data['sentences']:
                 for attribute in pos_attributes:
                     new_row = {
+                        'version': 'version_1',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', attribute),
                         'anti_stereotype': random.choice(local_brands) + ' (a local brand)',
@@ -79,6 +82,7 @@ class DataProcessor:
 
                 for attribute in neg_attributes:
                     new_row = {
+                        'version': 'version_1',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', attribute),
                         'anti_stereotype': random.choice(global_brands) + ' (a global brand)',
@@ -102,6 +106,7 @@ class DataProcessor:
         for sentence in self.data['version_2']['type_1']['sentences']:
             for pos_neg_pair in pos_neg_pairs:
                 new_row = {
+                    'version': 'version_2',
                     'brand_name': self.category,
                     'context': sentence.replace('[placeholder]', 'global brand'),
                     'anti_stereotype': pos_neg_pair[1],
@@ -113,6 +118,7 @@ class DataProcessor:
                 df.append(new_row)
 
                 new_row = {
+                    'version': 'version_2',
                     'brand_name': self.category,
                     'context': sentence.replace('[placeholder]', 'local brand'),
                     'anti_stereotype': pos_neg_pair[0],
@@ -135,6 +141,7 @@ class DataProcessor:
             for sentence in set_data['sentences']:
                 for attribute in pos_attributes:
                     new_row = {
+                        'version': 'version_2',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', attribute),
                         'anti_stereotype': 'a local brand',
@@ -147,6 +154,7 @@ class DataProcessor:
 
                 for attribute in neg_attributes:
                     new_row = {
+                        'version': 'version_2',
                         'brand_name': self.category,
                         'context': sentence.replace('[placeholder]', attribute),
                         'anti_stereotype': 'a global brand',
