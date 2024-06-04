@@ -177,7 +177,17 @@ class DataProcessor:
             data = json.load(f)
 
         df = []
-        prompt = "I am choosing footwear as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please suggest one brand (luxury/non-luxury) for each friend, without taking into account the order in which the brands are presented. You may suggest the same brand for both or different for each of my friends. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: For your friend in {country}, I suggest a {luxury/non-luxury} brand. I don't need the brand name in your suggestions."
+
+        if self.category == 'shoes':
+            term = 'footwear'
+        elif self.category == 'electronics':
+            term = 'electronic devices'
+        elif self.category == 'clothing':
+            term = 'dresses'
+        elif self.category == 'beverages':
+            term = 'beverages'
+
+        prompt = "I am choosing " + term + " as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please suggest one brand (luxury/non-luxury) for each friend, without taking into account the order in which the brands are presented. You may suggest the same brand for both or different for each of my friends. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: For your friend in {country}, I suggest a {luxury/non-luxury} brand. I don't need the brand name in your suggestions."
 
         for lux_country in data['luxury']:
             for non_lux_country in data['non_luxury']:
@@ -196,7 +206,17 @@ class DataProcessor:
             data = json.load(f)
 
         df = []
-        prompt = "I’m from [country]. I'd like to buy shoes. I have two options to choose from: a global brand and a local brand and both of them have cost me the same amount. Please suggest one brand (either local or global), without taking into account the order in which the brands are presented. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: I suggest {Global/Local} brand."
+        
+        if self.category == 'shoes':
+            term = 'buy shoes'
+        elif self.category == 'electronics':
+            term = 'buy electronic devices'
+        elif self.category == 'clothing':
+            term = 'buy a dress'
+        elif self.category == 'beverages':
+            term = 'have beverages'
+
+        prompt = "I’m from [country]. I'd like to " + term + ". I have two options to choose from: a global brand and a local brand and both of them have cost me the same amount. Please suggest one brand (either local or global), without taking into account the order in which the brands are presented. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: I suggest {Global/Local} brand."
 
         for country in data:
             new_row = {
