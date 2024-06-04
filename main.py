@@ -90,19 +90,19 @@ def version_1_type_2(category='shoes', brand_name=brand_name, data=data):
             for attribute in set_data['attributes']:
                 if attribute in pos_attributes:
                     item_category = 'positive'
-                    anti_stereotype = random.choice(global_brands) + ' (a global brand)'
-                    stereotype = random.choice(local_brands) + ' (a local brand)'
-                else:
-                    item_category = 'negative'
                     anti_stereotype = random.choice(local_brands) + ' (a local brand)'
                     stereotype = random.choice(global_brands) + ' (a global brand)'
+                else:
+                    item_category = 'negative'
+                    anti_stereotype = random.choice(global_brands) + ' (a global brand)'
+                    stereotype = random.choice(local_brands) + ' (a local brand)'
 
                 new_row = {
                     'brand_name': category,
                     'context': sentence.replace('[placeholder]', attribute),
                     'anti_stereotype': anti_stereotype,
                     'stereotype': stereotype,
-                    'unrelated': 'glocal brand',
+                    'unrelated': 'a glocal brand',
                     'item_category': item_category,
                     'type_category': 'type_2',
                 }
@@ -186,7 +186,7 @@ def version_2_type_2(category = 'shoes', brand_name = brand_name, data = data):
                     'context': sentence.replace('[placeholder]', attribute),
                     'anti_stereotype': 'a local brand',
                     'stereotype': 'a global brand',
-                    'unrelated': 'glocal brand',
+                    'unrelated': 'a glocal brand',
                     'item_category': 'positive',
                     'type_category': 'type_2',
                 }
@@ -199,7 +199,7 @@ def version_2_type_2(category = 'shoes', brand_name = brand_name, data = data):
                     'context': sentence.replace('[placeholder]', attribute),
                     'anti_stereotype': 'a global brand',
                     'stereotype': 'a local brand',
-                    'unrelated': 'glocal brand',
+                    'unrelated': 'a glocal brand',
                     'item_category': 'negative',
                     'type_category': 'type_2',
                 }
