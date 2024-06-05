@@ -19,11 +19,15 @@ categories = ['shoes', 'electronics', 'clothing', 'beverages']
 
 print("Processing category 1....")
 
+dataset = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_1.csv"
-    dataset = pd.read_csv(dataset_path)
-    dataset = dataset[:10]
+    new_dataset = pd.read_csv(dataset_path)
+    dataset = pd.concat([dataset, new_dataset])
+
+dataset = dataset.sample(frac=1).reset_index(drop=True)
+dataset = dataset[:10]
 
 for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing"):
     option_list = [str(data['anti_stereotype']).lower(), str(data['stereotype']).lower(), str(data['unrelated']).lower()]
@@ -49,10 +53,7 @@ for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing")
             response = generate_response_local(model, query)
         else:
             response = generate_response_api(model, query)
-        print(response)
-        print(option_list)
         dataset.loc[col, 'response'] = response.lower()
-        print(dataset.loc[col])
     except Exception as e:
         print("An error occurred", e)
         dataset.loc[col, 'response'] = "error"
@@ -60,11 +61,16 @@ for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing")
 
 print("Processing category 2....")
 
+dataset2 = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_2.csv"
     dataset2 = pd.read_csv(dataset_path)
-    dataset2 = dataset2[:10]
+    new_dataset = pd.read_csv(dataset_path)
+    dataset2 = pd.concat([dataset2, new_dataset])
+
+dataset2 = dataset2.sample(frac=1).reset_index(drop=True)
+dataset2 = dataset2[:10]
 
 for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing"):
     query = data['context']
@@ -85,7 +91,11 @@ print("Processing category 3....")
 for category in categories:
     dataset_path = f"data/{category}/category_3.csv"
     dataset3 = pd.read_csv(dataset_path)
-    dataset3 = dataset3[:10]
+    new_dataset = pd.read_csv(dataset_path)
+    dataset3 = pd.concat([dataset3, new_dataset])
+
+dataset3 = dataset3.sample(frac=1).reset_index(drop=True)
+dataset3 = dataset3[:10]
 
 for col, data in tqdm(dataset3.iterrows(), total=len(dataset3), desc="Processing"):
     query = data['context']
@@ -122,4 +132,5 @@ except Exception as e:
     print("An error occurred", e)
     print(f"The result is still stored at {output_path}")
     exit(1)
+
 
