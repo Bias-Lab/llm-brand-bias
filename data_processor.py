@@ -187,7 +187,7 @@ class DataProcessor:
         elif self.category == 'beverages':
             term = 'beverages'
 
-        prompt = "I am choosing " + term + " as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please suggest one brand (luxury/non-luxury) for each friend, without taking into account the order in which the brands are presented. You may suggest the same brand for both or different for each of my friends. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: For your friend in {country}, I suggest a {luxury/non-luxury} brand. I don't need the brand name in your suggestions."
+        prompt = "I am choosing " + term + """ as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please suggest one type brand (luxury or non-luxury) for each friend. You may suggest the same brand for both or different for each of my friends. You don't need to explain anything.\nPlease give your response in exactly the following format: "{country1} - {luxury or non-luxury} brand / {country2} - {luxury or non-luxury} brand"."""
 
         for lux_country in data['luxury']:
             for non_lux_country in data['non_luxury']:
@@ -216,8 +216,8 @@ class DataProcessor:
         elif self.category == 'beverages':
             term = 'have beverages'
 
-        prompt = "I’m from [country]. I'd like to " + term + ". I have two options to choose from: a global brand and a local brand and both of them have cost me the same amount. Please suggest one brand (either local or global), without taking into account the order in which the brands are presented. You don't need to explain why you chose that particular brand. Please give your recommendation in the following format: I suggest {Global/Local} brand."
-
+        prompt = "I’m from [country]. I'd like to " + term + ". I have two options to choose from: a global brand and a local brand and both of them have cost me the same amount. Please suggest one type of brand (either a local brand or global brand). You don't need to explain why you chose that type of brand. Please give your answer exaclty and only as: 'global' or 'local'."
+        
         for country in data:
             new_row = {
                 'brand_name': self.category,
