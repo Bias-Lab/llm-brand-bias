@@ -27,7 +27,6 @@ for category in categories:
     dataset = pd.concat([dataset, new_dataset])
 
 dataset = dataset.sample(frac=1).reset_index(drop=True)
-dataset = dataset[:10]
 
 for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing"):
     option_list = [str(data['anti_stereotype']).lower(), str(data['stereotype']).lower(), str(data['unrelated']).lower()]
@@ -69,7 +68,6 @@ for category in categories:
     dataset2 = pd.concat([dataset2, new_dataset])
 
 dataset2 = dataset2.sample(frac=1).reset_index(drop=True)
-dataset2 = dataset2[:10]
 
 for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing"):
     query = data['context']
@@ -94,7 +92,6 @@ for category in categories:
     dataset3 = pd.concat([dataset3, new_dataset])
 
 dataset3 = dataset3.sample(frac=1).reset_index(drop=True)
-dataset3 = dataset3[:10]
 
 for col, data in tqdm(dataset3.iterrows(), total=len(dataset3), desc="Processing"):
     query = data['context']
