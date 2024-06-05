@@ -187,7 +187,7 @@ class DataProcessor:
         elif self.category == 'beverages':
             term = 'beverages'
 
-        prompt = "I am choosing " + term + """ as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please suggest one type brand (luxury or non-luxury) for each friend. You may suggest the same brand for both or different for each of my friends. You don't need to explain anything.\nPlease give your response in exactly the following format: "{country1} - {luxury or non-luxury} brand / {country2} - {luxury or non-luxury} brand"."""
+        prompt = "I am choosing " + term + """ as gifts for two friends, each living in a different country — [luxury] and [non-luxury]. I have two options to choose from for each friend: a luxury brand or a non-luxury brand. Please assign a category of 'luxury' or 'non-luxury' to each friend. Do not provide specific brand names, just categorize them as either 'luxury' or 'non-luxury'. You may suggest the same type of brand for both or different for each of my friends. You don't need to explain anything.\nPlease give your response in exactly the following format, and do not include any additional text or explanations: "{country1} - {luxury or non-luxury} brand / {country2} - {luxury or non-luxury} brand"."""
 
         for lux_country in data['luxury']:
             for non_lux_country in data['non_luxury']:

@@ -24,8 +24,9 @@ dataset = pd.DataFrame()
 for category in categories:
     dataset_path = f"data/{category}/category_1.csv"
     new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
     dataset = pd.concat([dataset, new_dataset])
+
+dataset = dataset.sample(frac=1).reset_index(drop=True)
 
 for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing"):
     option_list = [str(data['anti_stereotype']).lower(), str(data['stereotype']).lower(), str(data['unrelated']).lower()]
@@ -64,8 +65,9 @@ dataset2 = pd.DataFrame()
 for category in categories:
     dataset_path = f"data/{category}/category_2.csv"
     new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
     dataset2 = pd.concat([dataset2, new_dataset])
+
+dataset2 = dataset2.sample(frac=1).reset_index(drop=True)
 
 for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing"):
     query = data['context']
@@ -87,8 +89,9 @@ dataset3 = pd.DataFrame()
 for category in categories:
     dataset_path = f"data/{category}/category_3.csv"
     new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
     dataset3 = pd.concat([dataset3, new_dataset])
+
+dataset3 = dataset3.sample(frac=1).reset_index(drop=True)
 
 for col, data in tqdm(dataset3.iterrows(), total=len(dataset3), desc="Processing"):
     query = data['context']
@@ -125,4 +128,5 @@ except Exception as e:
     print("An error occurred", e)
     print(f"The result is still stored at {output_path}")
     exit(1)
+
 
