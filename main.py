@@ -19,13 +19,11 @@ categories = ['shoes', 'electronics', 'clothing', 'beverages']
 
 print("Processing category 1....")
 
-dataset = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_1.csv"
-    new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
-    dataset = pd.concat([dataset, new_dataset])
+    dataset = pd.read_csv(dataset_path)
+    dataset = dataset[:10]
 
 for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing"):
     option_list = [str(data['anti_stereotype']).lower(), str(data['stereotype']).lower(), str(data['unrelated']).lower()]
@@ -51,7 +49,10 @@ for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing")
             response = generate_response_local(model, query)
         else:
             response = generate_response_api(model, query)
+        print(response)
+        print(option_list)
         dataset.loc[col, 'response'] = response.lower()
+        print(dataset.loc[col])
     except Exception as e:
         print("An error occurred", e)
         dataset.loc[col, 'response'] = "error"
@@ -59,13 +60,11 @@ for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing")
 
 print("Processing category 2....")
 
-dataset2 = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_2.csv"
-    new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
-    dataset2 = pd.concat([dataset2, new_dataset])
+    dataset2 = pd.read_csv(dataset_path)
+    dataset2 = dataset2[:10]
 
 for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing"):
     query = data['context']
@@ -82,13 +81,11 @@ for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing
 
 print("Processing category 3....")
 
-dataset3 = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_3.csv"
-    new_dataset = pd.read_csv(dataset_path)
-    new_dataset = new_dataset[:10]
-    dataset3 = pd.concat([dataset3, new_dataset])
+    dataset3 = pd.read_csv(dataset_path)
+    dataset3 = dataset3[:10]
 
 for col, data in tqdm(dataset3.iterrows(), total=len(dataset3), desc="Processing"):
     query = data['context']
