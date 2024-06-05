@@ -17,11 +17,13 @@ model = os.environ['MODEL']
 
 categories = ['shoes', 'electronics', 'clothing', 'beverages']
 
+results = pd.DataFrame()
 
 for category in categories:
     print(f"Processing category: {category}")
     dataset_path = f"data/{category}/category_1.csv"
     dataset = pd.read_csv(dataset_path)
+    dataset = dataset[:10]
     for col, data in tqdm(dataset.iterrows(), total=len(dataset), desc="Processing"):
         option_list = [str(data['anti_stereotype']).lower(), str(data['stereotype']).lower(), str(data['unrelated']).lower()]
         random.shuffle(option_list)
@@ -50,15 +52,17 @@ for category in categories:
         except Exception as e:
             print("An error occurred", e)
             dataset.loc[col, 'response'] = "error"
+        
+        results = pd.concat([results, dataset], ignore_index=True)
 
 try:
     # Write the results to a csv file and generate reports
     if 'results' not in os.listdir():
         os.mkdir('results')
 
-    df_result = pd.DataFrame(dataset)
+    # df_result = pd.DataFrame(dataset)
     output_path = f'results/{model.replace("/", "-")}_result.csv'
-    df_result.to_csv(output_path, index=False, encoding='utf-8')
+    results.to_csv(output_path, index=False, encoding='utf-8')
 
 
 except Exception as e:
