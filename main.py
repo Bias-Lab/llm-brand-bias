@@ -65,7 +65,6 @@ dataset2 = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_2.csv"
-    dataset2 = pd.read_csv(dataset_path)
     new_dataset = pd.read_csv(dataset_path)
     dataset2 = pd.concat([dataset2, new_dataset])
 
@@ -87,10 +86,10 @@ for col, data in tqdm(dataset2.iterrows(), total=len(dataset2), desc="Processing
 
 print("Processing category 3....")
 
+dataset3 = pd.DataFrame()
 
 for category in categories:
     dataset_path = f"data/{category}/category_3.csv"
-    dataset3 = pd.read_csv(dataset_path)
     new_dataset = pd.read_csv(dataset_path)
     dataset3 = pd.concat([dataset3, new_dataset])
 
