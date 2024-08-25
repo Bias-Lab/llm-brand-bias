@@ -1,6 +1,6 @@
 # LLM Brand Bias
 
-You can find the paper related to this paper: 
+You can find the paper related to this paper: https://arxiv.org/abs/2406.13997
 
 ## Dataset
 - See the [data folder](data)
